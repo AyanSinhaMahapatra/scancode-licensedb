@@ -41,7 +41,7 @@ conf:
 	@venv/bin/pip install -e ./scancode-toolkit/
 
 restore:
-	# Restores the repository to a clean state
+	@echo "-> Restoring the repository to a clean state"
 	git clean -fd
 	rm -rf scancode-toolkit/
 	git restore --worktree docs/
